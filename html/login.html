@@ -3,21 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="/typescript/login.ts"></script>
+    <script src="/typescript/script.ts"></script>
     <title>Login Now</title>
 </head>
-<body>
-    <div class="login">
-        <form>
-            <label for="username">Username</label><br>
-            <input type="text" id="username" name="username"><br>
-            <label for="password">Password</label><br>
-            <input type="password" id="password" name="password"><br>
-            <input type="submit">
-        </form>
-        <p>
-            Don't have an account? Click <a href="create-login.html">here</a> to make one!
-        </p>
+<body onload="todaysDate()">
+    <div class="mainContainer">
+        <div class="login">
+            <form>
+                <label for="username">Username</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password"><br>
+                <input type="submit">
+            </form>
+            <p>
+                Don't have an account? Click <a href="create-login.html">here</a> to make one!
+            </p>
+        </div>
+    </div>
+    <div class="footerContainer">
+        <div class="footerFlex">
+            <p>Website by Sam Marrello</p>
+        </div>
+        <div class="footerFlex">
+            <p>ALL DISPLAYED INFORMATION IS CONFIDENTIAL</p>
+        </div>
+        <div class="footerFlex">
+            <div class="todaysDate"></div>
+        </div>
     </div>
 </body>
 </html>

@@ -2,3 +2,19 @@ body {
     background-color: darkblue;
     color: green;
 }
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerFlex {
+    border-width: 1em;
+    border-style: dashed;
+    border-color: green;
+}

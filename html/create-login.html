@@ -3,23 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="/typescript/login.ts"></script>
+    <script src="/typescript/script.ts"></script>
     <title>Setup your user ID</title>
 </head>
-<body>
-    <div class="setup">
-        <p>Please enter your info as received during hiring.</p>
-        <form>
-            <label for="employeeName">Name</label><br>
-            <input type="text" id="employeeName" name="employeeName"><br>
-            <label for="employeeID">Employee ID</label><br>
-            <input type="number" id="employeeID" name="employeeID"><br>
-            <label for="employeeEmail">Email</label><br>
-            <input type="email" id="employeeEmail" name="employeeEmail"><br>
-            <label for="employeePassword">Password</label><br>
-            <input type="password" id="employeePassword" name="employeePassword"><br>
-            <input type="submit">
-        </form>
+<body onload="todaysDate()">
+    <div class="mainContainer">
+        <div class="setup">
+            <p>Please enter your info as received during hiring.</p>
+            <form>
+                <label for="employeeName">Name</label><br>
+                <input type="text" id="employeeName" name="employeeName"><br>
+                <label for="employeeID">Employee ID</label><br>
+                <input type="number" id="employeeID" name="employeeID"><br>
+                <label for="employeeEmail">Email</label><br>
+                <input type="email" id="employeeEmail" name="employeeEmail"><br>
+                <label for="employeePassword">Password</label><br>
+                <input type="password" id="employeePassword" name="employeePassword"><br>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+    <div class="footerContainer">
+        <div class="footerFlex">
+            <p>Website by Sam Marrello</p>
+        </div>
+        <div class="footerFlex">
+            <p>ALL DISPLAYED INFORMATION IS CONFIDENTIAL</p>
+        </div>
+        <div class="footerFlex">
+            <div class="todaysDate"></div>
+        </div>
     </div>
 </body>
 </html>
